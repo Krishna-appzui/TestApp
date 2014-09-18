@@ -1,0 +1,30 @@
+<html>
+<head>
+  <script src='http://code.jquery.com/jquery-2.1.0.min.js'></script>
+  <script>
+  	$(document).ready(function(){
+  		alert('hi');
+
+  		var request = $.ajax({
+		            url: "http://127.0.0.1:8124/",
+		            type: 'POST',
+		            contentType: "application/x-www-form-urlencoded",
+		            data: {},
+		            cache: false
+		        });
+		        request.done(function (msg) {
+					$('#mydiv').htmL(msg);
+		        });
+
+		        request.fail(function (jqXHR, textStatus) {
+						alert('failure');
+		        });
+  	});
+  </script>
+</head>
+<body>
+	<div> here is the server response.</div>
+	<div id='mydiv'></div>
+</body>
+
+</html>

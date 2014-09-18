@@ -1,0 +1,44 @@
+{
+    "name": "package-json-validator",
+    "version": "0.5.6",
+    "description": "Tools to validate package.json files",
+    "author": {
+        "name": "Krishna",
+        "email": "krishna@appzui.com"
+    },
+    "contributors": [
+        {
+            "name": "Krishna",
+            "email": "krishna@appzui.com"
+        }
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Krishna-appzui/samplenodeapp.git"
+    },
+    "licenses": [{
+        "type": "MIT",
+        "url": "https://github.com/gorillamania/package.json-validator/blob/master/LICENSE"
+    }],
+    "keywords": ["package.json", "validator", "package.json validator", "lint", "package.json linter"],
+    "homepage": "http://package-json-validator.com",
+    "bugs": {
+        "url" : "http://github.com/gorillamania/package.json-validator/issues",
+        "email" : "nick@sullivanflock.com"
+    },
+    "dependencies": {
+        "optimist": "~0.6.0"
+    },
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "grunt-contrib-jshint": "~0",
+        "grunt-contrib-qunit": "~0"
+    },
+    "scripts": {
+      "start":"./krish.js"  
+    },
+    "main": "./krish.js",
+    "bin": {
+        "pjv": "./bin/pjv"
+    }
+}
