@@ -1,0 +1,61 @@
+.scrollHorizontal {
+	-webkit-overflow-scrolling: touch;
+	overflow-x: auto;
+}
+
+.dataTableInset {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	position: static;
+}
+
+.dataTable {
+	position: static;
+	td {
+		position: static;
+		white-space:nowrap;
+		//text-align:center;
+		vertical-align:middle;
+	}
+}
+
+.fullFilterBox {
+
+	width: 100%;
+	td:nth-child(1) {
+		text-align:left;
+	}
+		
+	td:nth-child(2) {
+		text-align:right;
+	}	
+}
+
+.dataTableButton {
+	font-size: large;
+	color: white;
+	min-width: 33px;	
+	height: 28px;
+	text-align:center;
+	vertical-align:middle;
+	@include border-radius(5px);
+	@include background_gradient (#81a8ce, #5e87b0);
+}
+
+.dataTableButton:active {
+	opacity: 0.50;
+	@include background_gradient (#5e87b0, #81a8ce);
+}
+
+.detailPane {
+	font-size: small;
+	background-color:#C4E2FF;
+	border-style:solid;
+	border-width:1px;
+	border-color:#0A82FA;
+	//-webkit-overflow-scrolling: touch;
+	//overflow-x: auto;
+	white-space: normal;
+	padding-top:10px;
+	padding-bottom:10px;
+}

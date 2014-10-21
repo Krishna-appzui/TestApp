@@ -1,0 +1,150 @@
+{
+    "category": "workflow",
+    "type": "wfStep",
+    "fields": [
+        {
+            "name": "stepId",
+            "dataType": "refnum",
+            "primary": true
+        },
+        {
+            "name": "workflowId",
+            "dataType": "refnum"
+        },
+        {
+            "name": "stepOrder",
+            "dataType": "int"
+        },
+        {
+            "name": "approver",
+            "dataType": "string"
+        },
+        {
+            "name": "approverPositionType",
+            "dataType": "dimension",
+            "dimensionLevel": "/People/positionType"
+        },
+        {
+            "name": "stepState",
+            "dataType": "string"
+        },
+        {
+            "name": "stepDate",
+            "dataType": "date"
+        },
+        {
+            "name": "accountId",
+            "dataType": "refnum"
+        },
+        {
+            "name": "name",
+            "dataType": "string"
+        },
+        {
+            "name": "alternateName",
+            "dataType": "string"
+        },
+        {
+            "name": "accountPrefix",
+            "dataType": "string"
+        },
+        {
+            "name": "accountSuffix",
+            "dataType": "string"
+        },
+        {
+            "name": "reasonForNewSuffix",
+            "dataType": "string"
+        },
+        {
+            "name": "contact",
+            "dataType": "string"
+        },
+        {
+            "name": "comments",
+            "dataType": "string"
+        },
+        {
+            "name": "website",
+            "dataType": "string"
+        },
+        {
+            "name": "isPoRequired",
+            "dataType": "boolean"
+        },
+        {
+            "dimensionType": true,
+            "name": "salesTerritory",
+            "dataType": "dimension",
+            "dimensionLevel": "/Org/company/sbu/region/subRegion/salesTerritory",
+            "comment": "The sales territory of the account"
+        },
+        {
+            "name": "region",
+            "dataType": "dimension",
+            "dimensionLevel": "/Org/company/sbu/region"
+        },
+        {
+            "name": "sbu",
+            "dataType": "dimension",
+            "dimensionLevel": "/Org/company/sbu"
+        },
+        {
+            "dimensionType": true,
+            "exampleData": "/Account/Region[SOUTHERNCAREGION]/priceClass[01A]\n",
+            "dimensionLevel": "/Account/priceClass",
+            "name": "priceClass",
+            "dataType": "dimension",
+            "comment": "drives pricing, gross margin. Changes require approval \n(aka Account Class in the legacy system)\n"
+        },
+        {
+            "name": "reasonForClass",
+            "dataType": "string"
+        },
+        {
+            "dimensionType": true,
+            "dimensionLevel": "/Account/customerType",
+            "multilevel": true,
+            "name": "customerType",
+            "dataType": "dimension"
+        },
+        {
+            "name": "leadSourceId",
+            "dataType": "refnum"
+        },
+        {
+            "name": "distributionCenter",
+            "dataType": "dimension",
+            "dimensionLevel": "/Org/company/sbu/region/subRegion/ssc",
+            "label": "SSC Name"
+        },
+        {
+            "dimensionType": true,
+            "name": "orgPath",
+            "dataType": "dimension",
+            "dimensionLevel": "/Org"
+        },
+        {
+            "exampleData": "123 Main Street\nMain City, AL 23456",
+            "name": "addresses",
+            "listElementType": "block",
+            "dataType": "list",
+            "blockType": "Address",
+            "comment": "A list of address for an Account"
+        },
+        {
+            "name": "phones",
+            "listElementType": "block",
+            "dataType": "list",
+            "blockType": "Phone",
+            "comment": "A list of phone numbers for an Account."
+        },
+        {
+            "name": "emails",
+            "listElementType": "block",
+            "dataType": "list",
+            "blockType": "Email",
+            "comment": "A list of emails for an Account"
+        }
+    ]
+}

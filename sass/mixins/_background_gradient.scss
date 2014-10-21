@@ -1,0 +1,9 @@
+// Gradient Mixin
+// @author Bryan Nagle
+
+@mixin background_gradient($gradientStart, $gradientEnd) {	
+	background-image: -moz-linear-gradient(top, $gradientStart, $gradientEnd); /* FF3.6 */
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, $gradientStart),color-stop(1, $gradientEnd)); /* Saf4+, Chrome */
+	background-image: linear-gradient(top, $gradientStart, $gradientEnd);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='white', EndColorStr='#lightblue'); /* IE6–IE9 */
+}

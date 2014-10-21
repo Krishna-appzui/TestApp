@@ -1,0 +1,40 @@
+{
+  "type": "Phone",
+  "revisionId": "6b7fd9d5-6709-4eed-b95a-f1614ac9b63b",
+  "fields": [
+    {
+      "dimensionType": true,
+      "exampleData": "/Data/communicationType[Home]",
+      "dimensionLevel": "/Data/communicationType",
+      "primary": true,
+      "name": "phoneType",
+      "readonly": true,
+      "dataType": "dimension",
+      "comment": "Identifies the type of telephone numbers [mobile; home; fax; office]"
+    },
+    {
+      "exampleData": "01",
+      "primary": true,
+      "name": "phoneCountryCode",
+      "comment": "The country code for the telephone number"
+    },
+    {
+      "exampleData": "555-555-5555",
+      "primary": true,
+      "name": "phoneNumber",
+      "dataType": "phone",
+      "comment": "phone is sent as string"
+    }
+  ],
+  "supportedOperations": [
+    "Create",
+    "Update",
+    "Delete",
+    "Save"
+  ],
+  "category": "block",
+  "permissionType": "All",
+  "updatedBy": "sudhindra.naib@liquidanalytics.com",
+  "community": "DALTILE",
+  "updatedAt": "1393349910298"
+}

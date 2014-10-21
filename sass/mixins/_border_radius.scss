@@ -1,0 +1,8 @@
+// Border Radius Mixin
+// @author Bryan Nagle
+
+@mixin border_radius($radius) {	
+	border-radius: $radius;
+    -moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+}

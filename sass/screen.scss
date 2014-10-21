@@ -1,0 +1,260 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass";
+@import "partials/tree";
+@import "partials/login";
+@import "partials/dataTables";
+@import "partials/commitLog";
+@import "partials/jGrowl";
+@import "partials/analyst";
+@import "partials/heights";
+
+@import "mixins/border_radius";
+@import "mixins/background_gradient";
+
+@import "partials/bootstrapExtensions.scss";
+@import "partials/spinner-dashes";
+@include spinner-dashes("spinner-mini-white", 16px, 10, white);
+@include spinner-dashes("spinner-mini-black", 16px, 10, black);
+@include spinner-dashes("spinner-large-blue", 55px, 10, #66CCFF);
+
+
+
+.modal-iframe-dialog {
+  width: 90%; /* desired relative width */
+  min-height:80%;
+  //left: 5%; /* (100%-width)/2 */
+  margin: auto auto auto auto; /* place center */
+}
+
+.modal-iframe-body {
+  max-height:none;
+  top:50px;
+  bottom:50px;
+  right:0px;
+  left:0px;
+}
+
+.fixedScrollbar {
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll;
+}
+
+.skyBlueGradient{
+     @include background_gradient (#FFFFFF, #CCFFFF);
+     background-attachment:fixed;
+}
+
+.listInset {
+	padding-left:0.8em;
+	padding-right:0.8em;
+}
+
+.collapsibleInset {
+    #margin-top: 100px;
+	padding-top:.5em;
+	padding-left:1.25em;
+	padding-right:1.25em;
+}
+
+.listCollapsibleInset{
+	padding-top:.35em;
+	padding-bottom:.3em;
+	padding-left:.2em;
+	padding-right:.2em;
+}
+
+.searchBox {
+	width:100%;
+	
+	td:nth-child(1) {
+		width:80%;
+	}
+		
+	td:nth-child(2) {
+		width:10%;
+	}
+	
+	td:nth-child(3) {
+		width:10%;
+	}
+}
+
+.content-center{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.rightAlign {
+	text-align:right;
+}
+
+.leftAlign {
+	text-align:left;
+}
+
+.content-left {
+    width: 55%;
+    padding-right: 2%;
+    margin: 0px 0 0px 2%;
+    float: left;
+}
+
+.content-right {
+ width: 25%;
+ margin: 15px 0 0 0%;
+padding-right: 7.5%;
+float: right;
+}
+
+
+.leftHeaderPanel {
+	min-height: 72px;
+	max-height: 72px;
+	height: 82px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+    float: left;
+    /*background-color:#C0C0C0;*/
+}
+
+.rightHeaderPanel {
+
+	height: 82px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+    float: right;
+    /*background-color:#580000;*/
+   
+  
+}
+
+
+.contentMarginOverride{
+
+	
+}
+
+.hiddenMenu{
+	float: right;
+}
+
+.optionIcon{
+	width: 72px;
+	height: 72px;
+	
+	float: right;
+	margin-top: 10px;
+ 	margin-left: 10px;
+ 	margin-right: -15px;
+}
+
+.headerIcon{
+	width: 72px;
+	height: 72px;
+	
+	float: left;
+ 	margin-right: 8px;
+}
+
+.headerTitle{
+	margin-top: 15px;
+	float: right;
+	font-size: 40px;
+	margin-bottom: 30px;
+}
+
+.headerInfo{
+	
+	text-align: right;
+	font-size: 18px;
+	float: left;
+	margin-top: 15px;
+
+	
+	
+}
+
+.infoLine{
+	text-algin: right;
+}
+
+.barPaddingOverride{
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.errorField{
+	color: #CA226B;
+	font-style:italic;
+}
+
+.ignoreBackground{
+	background: none;
+}
+
+.centerSpanVertically {
+    display:inline-block; 
+    vertical-align:middle;
+}
+
+// OrgPathView
+
+.orgPathCellContent {
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+}
+
+.orgPathCellContentLeft {
+    width: 90%;
+    height: 50px;
+    display: inline-block;
+    -moz-user-select: none; 
+    -webkit-user-select: none; 
+    -ms-user-select:none; 
+    user-select:none;
+}
+
+.orgPathCellDisclosureButton {
+  display:inline-block; 
+  vertical-align:middle;
+}
+
+.hidden-checkbox {
+    display: none;
+}
+
+.blockCheckBox {
+    display:inline-block; 
+    vertical-align:middle;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    background: #d9d9d9;
+    border-radius: 3px;  
+}
+
+.not-checked, .checked {
+    background-repeat: no-repeat;
+}
+
+.not-checked {
+    background-position: 18px 0;   
+    background-color:#d9d9d9;
+}
+
+.checked {
+    background-position: 0 0;   
+    background-color:#6496bc;    
+}
+
+div.jGrowl.top-right {
+  right: 0px;
+  top: 55px;
+}

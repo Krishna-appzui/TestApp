@@ -1,0 +1,120 @@
+{
+    "type": "Address",
+    "revisionId": "5e08ff2b-9ab6-4624-85bb-af0dcedd4fe4",
+    "fields": [
+        {
+            "dimensionType": true,
+            "exampleData": "/Data/communicationType[Work]",
+            "dimensionLevel": "/Data/communicationType",
+            "primary": true,
+            "name": "addressType",
+            "dataType": "dimension",
+            "comment": "Describes the address location [Work, Main, Home]"
+        },
+        {
+            "name": "primary",
+            "dataType": "boolean",
+            "comment": "Allows the UX to determine which address is primary."
+        },
+        {
+            "exampleData": "HENRYS HIDEAWAY",
+            "primary": true,
+            "name": "name",
+            "comment": "Label presented to the user to identify the address location"
+        },
+        {
+            "exampleData": "1500 N ANDREWS EXT",
+            "primary": true,
+            "name": "addressLine1",
+            "comment": "The primary address information (house number, street)"
+        },
+        {
+            "exampleData": "Suite 333",
+            "primary": true,
+            "name": "addressLine2",
+            "comment": "The secondary address information (apartment, unit number, floor)"
+        },
+        {
+            "exampleData": "c/o Zara Stone",
+            "primary": true,
+            "name": "addressLine3",
+            "comment": "The tertiary address information (care of, residential route#)"
+        },
+        {
+            "exampleData": "POMPANO BCH",
+            "name": "city",
+            "comment": "The city for the address"
+        },
+        {
+            "dimensionType": true,
+            "exampleData": "/Global/country[USA]",
+            "dimensionLevel": "/Global/country",
+            "name": "country",
+            "dataType": "dimension"
+        },
+        {
+            "dimensionType": true,
+            "exampleData": "/Global/country[USA]/region[FL]",
+            "dimensionLevel": "/Global/country/region",
+            "name": "region",
+            "dataType": "dimension",
+            "comment": "The state/territory for the address.  The exact values for this are dependent on the country"
+        },
+        {
+            "exampleData": "32933",
+            "name": "postalCode",
+            "comment": "The postal code or zip code for the address"
+        },
+        {
+            "exampleData": "GO TO BACK ENTER THIS CODE",
+            "name": "addressNote",
+            "comment": "comment on the address"
+        },
+        {
+            "exampleData": "38?53'23\"N",
+            "primary": true,
+            "name": "latitude",
+            "dataType": "decmial",
+            "comment": "Allows the application to geocode the address"
+        },
+        {
+            "exampleData": "77?00'27\"W",
+            "name": "longitude",
+            "dataType": "decmial",
+            "comment": "Allows the application to geocode the address"
+        },
+        {
+            "exampleData": "1 or 0",
+            "name": "partialMatch",
+            "dataType": "boolean",
+            "comment": "map API values"
+        },
+        {
+            "dimensionType": true,
+            "dimensionLevel": "/Data/locationType",
+            "name": "locationType",
+            "dataType": "dimension",
+            "comment": "static list from google map API"
+        },
+        {
+            "dimensionType": true,
+            "exampleData": "/Data/geoLocationStatus[DeviceCoded]",
+            "dimensionLevel": "/Data/geoLocationStatus",
+            "name": "geoLocationStatus",
+            "dataType": "dimension",
+            "comment": "Liquid determined field"
+        }
+    ],
+    "supportedOperations": [
+        "Create",
+        "Update",
+        "Delete",
+        "Save"
+    ],
+    "category": "block",
+    "cascadeDeletesTo": [],
+    "permissionType": "All",
+    "updatedBy": "sudhindra.naib@liquidanalytics.com",
+    "community": "DALTILE",
+    "updatedAt": "1395221186391"
+}

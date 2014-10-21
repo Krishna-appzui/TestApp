@@ -1,0 +1,62 @@
+/*
+Copyright Everglade Solutions, Inc., d/b/a Liquid Analytics 2014. All rights reserved.
+@Author Bryan Nagle
+*/
+/* 
+    Created on : Mar 24, 2014, 4:35:02 PM
+    Author     : bryan
+*/
+
+@import "compass/css3";
+@import "animate";
+
+@mixin spinner-dashes($name: null, $size: 32px, $count: 10, $color: #555) {
+
+   $class: "";
+   @if $name { $class: ".#{$name}"; };
+
+   @if $size % 2 > 0 { $size: $size+1; };
+
+   $half: $size / 2;
+   $width: ceil($half / 5);
+   $dash: $half - round($width * ($count + 5) / 10);
+
+   $rot: floor(360 / $count) + 0deg;
+
+   .spinner.dashes#{$class} {
+      display:inline-block;
+      vertical-align: middle;
+      position: relative;
+      width: $size;
+      height: $size;
+      @include translateZ(0);
+   }
+
+   .spinner.dashes#{$class} > div {
+      
+      position: absolute;
+      width: $width;
+      height: $dash;
+      top: 0;
+      left: $half - $width/2;
+      background-color: transparent;
+      @include border-radius($width);
+      @include transform-origin($width/2, $half);
+      @include animation-name(hashes-lighten#{$name});
+      @include animation-timing-function(linear);
+      @include animation-iteration-count(infinite);
+      @include animation-duration($count * 100ms);
+   }
+
+   @for $i from 1 through $count {
+       .spinner.dashes#{$class} > div:nth-of-type(#{$i}) {
+         @include rotate($rot * ($i - 1));
+         @include animation-delay($i*100ms);
+      }
+   }
+
+   @include keyframes(hashes-lighten#{$name}) {
+       from { background-color: $color; }
+       to { background-color: lighten($color, $count * 8); }
+   }
+}

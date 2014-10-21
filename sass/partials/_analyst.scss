@@ -1,0 +1,95 @@
+@import "mixins/border_radius";
+@import "mixins/background_gradient";
+
+textarea {
+    resize: none;
+}
+
+.searchWithList{
+    margin-top: 25px;
+}
+
+.templateBox{
+	height: 150px;
+	margin: 10px;
+	text-align: center;
+	vertical-align: center;
+}
+
+.templateCenterComponent{
+	width: 760px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.templateCenterCancelButton{
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.templateToolbar{
+	display: inline-block;
+}
+
+.answerTextRemain{
+	float: right; 
+	margin-top: 10px;
+	margin-right: 15px;
+	font-size: 11px;
+	font-style: italic;
+}
+
+#surveyAllFilter {
+    border-right-width: 1px;
+}
+
+#createSurveyBtn {
+    min-width: 210px;
+}
+
+#orderHistoryFilter {
+    border-right-width: 1px;
+}
+
+#tagCloud {
+    margin-left: 8px;
+}
+
+.tagcloudlink {
+    margin: 2px;
+    color: #fc8e00;
+}
+
+.tip {
+    color: #111;
+    width: 139px;
+    background-color: white;
+    border:1px solid #ccc;
+    -moz-box-shadow:#555 2px 2px 8px;
+    -webkit-box-shadow:#555 2px 2px 8px;
+    -o-box-shadow:#555 2px 2px 8px;
+    box-shadow:#555 2px 2px 8px;
+    opacity:0.9;
+    filter:alpha(opacity=90);
+    font-size:10px;
+    font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+    padding:7px;
+}
+
+.ui-select {
+    display: inline;
+    position: relative;
+}
+
+.dashboardChart {
+    height:300px;
+    width:375px;
+    float:left;
+    text-align:center;
+    margin: 0 0 50px 50px;
+}
+
+.dashboardTitle {
+    font-size: 1.5em;
+}

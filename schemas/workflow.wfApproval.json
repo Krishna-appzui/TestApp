@@ -1,0 +1,47 @@
+{
+    "category": "workflow",
+    "type": "wfApproval",
+    "fields": [
+        {
+            "name": "approvalId",
+            "dataType": "refnum",
+            "primary": true
+        },
+        {
+            "name": "accountId",
+            "dataType": "refnum"
+        },
+        {
+            "name": "accounthId",
+            "dataType": "refum"
+        },
+        {
+            "name": "status",
+            "dataType": "string"
+        },
+        {
+            "name": "state",
+            "dataType": "string"
+        },
+        {
+            "name": "currentStep",
+            "dataType": "refnum"
+        },
+        {
+            "name": "name",
+            "dataType": "string"
+        },
+        {
+            "name": "requestor",
+            "dataType": "string"
+        },
+        {
+            "name": "createdAt",
+            "dataType": "date"
+        },
+        {
+            "name": "updatedAt",
+            "dataType": "date"
+        }
+    ]
+}

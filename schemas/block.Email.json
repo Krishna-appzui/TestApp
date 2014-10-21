@@ -1,0 +1,35 @@
+{
+  "type": "Email",
+  "revisionId": "0ef3a080-dabc-4ac4-aa4e-74d84b2d9ac0",
+  "fields": [
+    {
+      "dimensionType": true,
+      "exampleData": "/Data/communicationType[Main]",
+      "dimensionLevel": "/Data/communicationType",
+      "primary": true,
+      "name": "emailType",
+      "dataType": "dimension",
+      "comment": "Identifies the type of email [Work, Home, Main]"
+    },
+    {
+      "exampleData": "hello@me.com",
+      "primary": true,
+      "name": "email",
+      "dataType": "email",
+      "comment": "email is sent as string"
+    }
+    
+  ],
+  "supportedOperations": [
+    "Create",
+    "Update",
+    "Delete",
+    "Save"
+  ],
+  "category": "block",
+  "cascadeDeletesTo": [],
+  "permissionType": "All",
+  "updatedBy": "sudhindra.naib@liquidanalytics.com",
+  "community": "DALTILE",
+  "updatedAt": "1393349910297"
+}

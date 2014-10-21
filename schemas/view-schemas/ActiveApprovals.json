@@ -1,0 +1,71 @@
+{
+    "type": "ActiveApprovals",
+    "fields": [
+        {
+            "name": "accountName",
+            "dataType": "string",
+            "searchable": true
+        },
+        {
+            "name": "stepState",
+            "dataType": "string"
+        },
+        {
+            "name": "approver",
+            "dataType": "string",
+            "searchable": true
+        },
+        {
+            "name": "newName",
+            "dataType": "string",
+            "searchable": true
+        },
+        {
+            "name": "approvalId",
+            "dataType": "refnum",
+            "primary": true
+        },
+        {
+            "name": "accountId",
+            "dataType": "refnum",
+            "searchable": true
+        },
+        {
+            "name": "accounthId",
+            "dataType": "refnum",
+            "searchable": true
+        },
+        {
+            "name": "status",
+            "dataType": "string",
+            "searchable": true
+        },
+        {
+            "name": "state",
+            "dataType": "string",
+            "searchable": true
+        },
+        {
+            "name": "currentStep",
+            "dataType": "refnum"
+        },
+        {
+            "name": "name",
+            "dataType": "string",
+            "searchable": true
+        },
+        {
+            "name": "requestor",
+            "dataType": "string",
+            "searchable": true
+        },
+        {
+            "name": "createdAt",
+            "dataType": "date"
+        },
+        {
+            "name": "updatedAt",
+            "dataType": "date"
+        }
+    ]
+}

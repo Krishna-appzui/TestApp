@@ -1,0 +1,23 @@
+.singleLineMessage {
+	white-space: nowrap;
+	overflow:hidden;
+	width:100%;
+	text-overflow: ellipsis;
+}
+
+.commitLog {
+	font-size: small;
+	overflow-y: scroll; 
+	height: 200px; 
+	-webkit-overflow-scrolling: touch; 
+	margin-top: 0px;
+	
+	table {
+		font-size: small;
+		
+		td {
+			text-align:center;
+			vertical-align:middle;
+		}
+	}
+}
